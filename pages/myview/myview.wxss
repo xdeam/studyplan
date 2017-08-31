@@ -1,0 +1,19 @@
+/* myview.wxss */
+
+.log-list{
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.text-item{
+margin: 10rpx;
+}
+/* .child{
+  display: inline;
+} */
+.child1{
+ position: relative;
+}
+.child2{
+ position:relative;
+}

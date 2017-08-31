@@ -1,0 +1,8 @@
+/* addplan.wxss */
+@import "../common/lib/weui.wxss";
+
+container{
+  height: max-content;
+  background-color: #17f;
+  z-index:0;
+}

@@ -1,0 +1,122 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.logo{
+ background: none;
+ height: 100rpx;
+ width:100rpx;
+ position:fixed;
+ right: 10rpx;
+ top: 10rpx;
+
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.container{
+  height: max-content;
+  background-image: none;
+  background-color: #17f;
+  z-index:0;
+}
+.date{
+    position: fixed;
+    top:50rpx;
+    left:30rpx;
+    font-size:small;
+    color:#ffffff;
+    
+}
+.log-list{
+  display:flex;
+  flex-direction: column;
+  padding: 40rpx;
+  margin-top: 20rpx;
+
+}
+.addnew{
+  height:150rpx;
+  width:150rpx;
+  border-radius: 100rpx;
+  position:fixed;
+  right: 35rpx;
+  bottom:35rpx;
+  font-size: 60rpx;
+  z-index: 99;
+}
+.list-item{
+width:675rpx;
+height: auto;
+margin-top:2rpx;
+overflow: hidden;
+padding:10rpx;
+border-radius: 20rpx;
+background:#cdf;
+flex-direction:row-reverse;
+}
+ .list-item-options{
+ height: 0;
+  overflow: hidden;
+} 
+.list-item-options-show{
+ height:auto;
+}
+.list-item-option{
+  width: 600rpx;
+  height: auto;
+  margin: 0rpx 40rpx;
+  text-align: center;
+  background: green;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+
+   transform: translateY(-50%);
+  transition: .3s;
+ }
+ .list-item-option-show{
+  opacity: 1;
+  transform: translateY(0);
+ }
+
+.list-item-option-abandon{
+  width: 600rpx;
+  height: auto;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin: 0rpx 40rpx;
+  text-align: center;
+  background: red;
+}
+.item-logo{
+   position: relative;
+   top:30rpx;
+   left:20rpx;
+   background: none;
+   height: 110rpx;
+   width:110rpx;
+}
+.item-title{
+  position: relative;
+  display: inline;
+  left:40rpx;
+  top:-50rpx;
+  font-size: 40rpx;
+  font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+.item-time{
+  position: relative;
+  left:150rpx;
+  font-size:35rpx;
+  font-family: "MicrosoftJhengHei";
+}

@@ -1,0 +1,21 @@
+<!--myview.wxml-->
+<view class="container">
+<block class="log-list" wx:for="{{datas}}" wx:for-item="data" wx:key="*this" >
+  <text class="text-item" bindtap="tapList" id="{{index}}">
+  {{data}}.{{index}}
+  </text>
+</block>
+<text>result is {{result}}</text>
+<form class="section" bindsubmit="submit">
+  <view class="section">
+    <view class="section__title">input</view>
+    <input name="input" placeholder="please input here" />
+  </view>
+  <button type="primary" size="{{primarySize}}"form-type="submit">保存</button>
+</form>
+<button type="primary" size="{{primarySize}}" bindtap="read">读取数据</button>
+<view class="parent">
+  <view class="child">c1</view>
+  <view class="child">c2</view>
+</view>
+</view>
