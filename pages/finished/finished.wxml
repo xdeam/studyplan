@@ -7,8 +7,8 @@
        </Image>
        <view>
           <view class="title">{{log.text}}</view>
-          <view class="plantime">计划时间</view>
-          <view class="finshtime">结束时间</view>
+          <view class="plantime">计划完成日期：{{log.time}}</view>
+          <view class="finshtime">实际完成日期：{{log.completeTime}}</view>
        </view>
     </view>
   </block>

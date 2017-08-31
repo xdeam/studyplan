@@ -82,7 +82,14 @@ Page({
           if (!finishdatas) {
             finishdatas = new Array();
           }
-          finishdatas.push(data[0]);
+          data[0].completTime=new Date().getDate;
+          var d=new Object();
+          d.text=data[0].text;
+          d.time=data[0].time;
+          var dt=new Date();
+          d.completeTime=dt.getFullYear()+"-"+(dt.getMonth()+1)+"-"+dt.getDate();
+          console.log('d',d);
+          finishdatas.push(d);
           wx.setStorageSync('key', datas);
           wx.setStorageSync('finishdata', finishdatas);
           that.setData({ list: datas });
