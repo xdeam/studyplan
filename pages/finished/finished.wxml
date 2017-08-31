@@ -1,6 +1,15 @@
 <!--logs.wxml-->
 <view class="container log-list">
   <block class="log-list" wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
-    <text class="log-item" bindtap="hahaha" data-name="value" id="{{index}}">{{index + 1}}. {{log.text}}</text>
+    <!-- <text class="log-item" bindtap="hahaha" data-name="value" id="{{index}}">{{index + 1}}. {{log.text}}</text> -->
+    <view class="log-item">
+       <Image src="/image/icon2.png" class="icon">
+       </Image>
+       <view>
+          <view class="title">{{log.text}}</view>
+          <view class="plantime">计划时间</view>
+          <view class="finshtime">结束时间</view>
+       </view>
+    </view>
   </block>
 </view>
