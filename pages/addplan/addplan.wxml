@@ -1,23 +1,18 @@
 <!--addplan.wxml-->
 <view class="container">
-<view class="bd-in"></view>
+
 <form class="form" bindsubmit="submit1">
-  <view>
-    <view class="dectext">计划名称</view>
-    <input name="input" placeholder="请输入学习计划" focus="true" />
-  </view>
+ <view class="dectext">计划名称</view> 
  <view class="bd-in"></view>
-<view class="weui-cells__title dectext">请选择时间</view>
-      <view class="weui-cells weui-cells_after-title">
-        <view class="weui-cell weui-cell_input">
-          <view class="weui-cell__bd">
-            <picker name="picker"mode="date" value="{{selectTime}}" start="{{currentTime}}" end="2100-09-01"             bindchange="selectTime">
-              <view class="weui-input">{{selectTime}}</view>
-            </picker>
-          </view>
-        </view>
-      </view>
-      <view class="bd-in"></view>
+ <input name="input" placeholder="请输入学习计划" focus="true" class="input"/>
+
+<view class="div-picktime">
+<view class="dectext">请选择日期</view>
+<view class="bd-in"></view>       
+<picker name="picker"mode="date" value="{{selectTime}}" start="{{currentTime}}" end="2100-09-01"             bindchange="selectTime">
+<view class="weui-input">{{selectTime}}</view>
+</picker>
+</view>
 <button type="primary" size="{{primarySize}}"form-type="submit" class="button">加入计划列表</button>
 
 </form>

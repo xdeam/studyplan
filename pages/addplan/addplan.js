@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    selectTime:'请选择日期',
+    selectTime:'点击选择计划完成日期',
     currentTime:''
   },
   /**
@@ -59,7 +59,7 @@ Page({
       })
       return;
     }
-    if (item.time == '请选择日期'){
+    if (item.time == '点击选择计划完成日期'){
       wx.showModal({
         title: '请选择日期',
         content: "",
