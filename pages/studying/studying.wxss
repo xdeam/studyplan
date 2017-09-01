@@ -55,18 +55,8 @@
   font-size: 60rpx;
   z-index: 99;
 }
-.list-item{
-width:675rpx;
-height: auto;
-margin-top:2rpx;
-overflow: hidden;
-padding:10rpx;
-border-radius: 20rpx;
-background:#cdf;
-flex-direction:row-reverse;
-}
  .list-item-options{
- height: 0;
+  height: 0;
   overflow: hidden;
 } 
 .list-item-options-show{
@@ -80,8 +70,7 @@ flex-direction:row-reverse;
   background: green;
   padding-top: 20rpx;
   padding-bottom: 20rpx;
-
-   transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: .3s;
  }
  .list-item-option-show{
@@ -98,25 +87,40 @@ flex-direction:row-reverse;
   text-align: center;
   background: red;
 }
+.list-item{
+display: flex;
+width:675rpx;
+height: 230rpx;
+margin-top:2rpx;
+overflow: auto;
+padding:10rpx;
+border-radius: 20rpx;
+background:#cdf;
+}
 .item-logo{
    position: relative;
-   top:30rpx;
-   left:20rpx;
+   width:115rpx;
+   height: 170rpx;
+   padding:30rpx;
    background: none;
-   height: 110rpx;
-   width:110rpx;
+   
+}
+.item-texts{
+  width: 470rpx;
+  padding: 30rpx;
 }
 .item-title{
+  display: flex;
   position: relative;
-  display: inline;
-  left:40rpx;
-  top:-50rpx;
+  left:30rpx;
+  width: 400rpx;
+  height: 80rpx;
   font-size: 40rpx;
-  font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
 }
 .item-time{
   position: relative;
-  left:150rpx;
+  left:30rpx;
+  margin-top: 50rpx;
   font-size:35rpx;
   font-family: "MicrosoftJhengHei";
 }

@@ -19,12 +19,18 @@
   font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
 }
 .plantime{
+ position: relative;
+ margin-top: 20rpx;
  left:20rpx;
- margin-top: 5rpx;
+ top: 5rpx;
+ font-size: 26rpx;
 }
-.finshedtime{
+.finshtime{
+ position:relative; 
+  margin-top: 20rpx;
  left:20rpx;
- margin-top: 5rpx;
+ top: 5rpx;
+ font-size: 26rpx;
 }
 .log-item {
  width:675rpx;

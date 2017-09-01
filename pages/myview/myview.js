@@ -1,21 +1,18 @@
-// myview.js
-var vardatas
+// pages/myview/myview.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  datas:[],
-  result:""
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  vardatas=["ass","b","c","d","e"]
-  this.setData({datas:vardatas})
+  
   },
 
   /**
@@ -64,36 +61,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  return{ title: '自定义转发标题',
-      path: '/page/user?id=123'}
-  },
-  tapList:function(event){
-    var index=event.currentTarget.id
-    var data=vardatas[index]
-    this.setData({result:data})
-  },
-  submit:function(e){
-    console.log('input value'+e.detail.value.input)
-    vardatas.push(e.detail.value.input)
-    wx.setStorage({
-      key: 'key1',
-      data: vardatas,
-      success:function(){
-        console.log('save scuccess')
-      },
-      fail:function(){
-        console.log('save failed')
-      },
-      complete:function(){
-        console.log('completed')
-      }
-    })
-  },
-  read:function(){
-    var res=wx.getStorageSync('key1')
-    console.log('res='+res)
-    if(res)
-    this.setData({datas:res})
+  
   }
-
 })

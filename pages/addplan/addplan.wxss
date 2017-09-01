@@ -1,8 +1,31 @@
 /* addplan.wxss */
-@import "../common/lib/weui.wxss";
 
-container{
-  height: max-content;
-  background-color: #17f;
-  z-index:0;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background: #17f
+  
+}
+
+.bd{
+  width: 700rpx;
+  height: 1rpx;
+  background: #bbf;
+}
+.bd-in{
+   width: 600rpx;
+  height: 1rpx;
+  margin-top:30rpx;
+  background: #bbf;
+}
+.button{
+  margin-top: 60rpx;
+  width: 500rpx;
+}
+.dectext{
+  font-size: 30rpx;
+}
+.datetext{
+  font-size:40rpx;
 }
